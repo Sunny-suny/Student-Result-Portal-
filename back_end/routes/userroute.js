@@ -1,0 +1,13 @@
+let express=require("express")
+const { upld_marks, get_results, upload, add_std, gethltkt, get_std, del } = require("../controlers/usercontroler")
+const { admreg, admlogin, islogin } = require("../controlers/admincont")
+let u_route=new express.Router()
+u_route.post("/reg",upload.single("photo"),add_std)
+u_route.get("/hal/:optn/:val",gethltkt)
+u_route.put("/upd",islogin,upld_marks)  
+u_route.get("/res/:hno",get_results)
+u_route.get("/getstd",islogin,get_std)
+u_route.delete("/del/:hno",islogin,del)
+u_route.post("/adminreg",admreg)
+u_route.post("/login",admlogin)
+module.exports=u_route

@@ -1,0 +1,239 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+}
+
+
+/* resultportal css */
+
+
+nav{
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav a{
+  font-weight: bold;
+  color: aliceblue;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+nav div{
+  font-size: 20px;
+  font-weight: bold;
+  color: aliceblue;
+}
+.card{
+  padding: 10px;
+  border:2px solid rgb(70, 69, 69);
+  box-shadow: 4px 4px 4px 4px rgb(15, 14, 14);
+  border-radius: 25px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.card img{
+  width: 100px;
+  height: 100px;
+}
+.card p{
+  padding: 5px;
+  letter-spacing: 5px;
+  font-size: 18px;
+  border: 2px solid black;
+  border-radius: 15px;
+  /* box-shadow: 2px 2px 2px 2px rgb(14, 8, 8); */
+  /* line-height: 0%; */
+}
+.hcon{
+  width: 100%;
+  height: 90vh;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hform{
+  justify-content: center;
+  width: 30%;
+  padding: 20px;
+  /* height: 30vh; */
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+  gap: 5px;
+}
+.hform button{
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.rcon{
+  width: 100%;
+  height: 90vh;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  box-sizing: border-box;
+}
+.rcon h1{
+  text-align: center;
+}
+.rform{
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 25px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid black; */
+  box-sizing: border-box;
+  gap: 5px;
+}
+.rp1{
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* border: 2px solid black; */
+}
+.rp2{
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.rform button{
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.hmcon{
+  width: 100%;
+  min-height: 90vh;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  box-sizing: border-box;
+  gap: 6px;
+}
+.hmform{
+  justify-content: center;
+  width: 30%;
+  padding: 20px;
+  /* height: 30vh; */
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+}
+.hmform button{
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+table,tr,th,td{
+  border: 2px solid black;
+  text-align: center;
+  vertical-align: center;
+  border-collapse: collapse;
+}
+.hmcon img{
+  width: 100px;
+  height: 100px;
+}
+.dcon{
+  width: 100%;
+  height: 90vh;
+  background-color: aquamarine;
+}
+.dcon table{
+  width: 100%;
+}
+.dcon th{
+  text-decoration: underline;
+}
+.edcon{
+  width: 100%;
+  height: 90vh;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  box-sizing: border-box;
+}
+.edform{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid black; */
+  box-sizing: border-box;
+}
+.ep1{
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* border: 2px solid black; */
+}
+.ep2{
+  /* border: 2px solid black; */
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.lgcon{
+  width: 100%;
+  height: 90vh;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  box-sizing: border-box;
+  position: relative;
+}
+.lgform{
+
+  position: absolute;
+  top: 30%;
+  width: 30%;
+}
+.lginp{
+  padding: 30px;
+  border: 2px solid black;
+  border-radius: 25px;
+  left: 0%;
+  top: 30%;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid black; */
+  box-sizing: border-box;
+  gap: 5px;
+}
+.lginp button{
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
