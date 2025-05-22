@@ -3,237 +3,651 @@
   padding: 0px;
   outline: none;
 }
-
-
-/* resultportal css */
-
-
-nav{
-  width: 100%;
-  height: 10vh;
-  background-color: black;
-  font-size: 20px;
+.navbar {
   display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
   justify-content: space-evenly;
   align-items: center;
+  font-family: Arial, sans-serif;
 }
-nav a{
-  font-weight: bold;
-  color: aliceblue;
+.navbar a {
   text-decoration: none;
-  text-transform: capitalize;
+  color: #2c3e50;
+  font-weight: 800;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
 }
-nav div{
-  font-size: 20px;
-  font-weight: bold;
-  color: aliceblue;
+.navbar a:hover {
+  background-color: #2c3e50;
+  color: #ffffff;
 }
-.card{
-  padding: 10px;
-  border:2px solid rgb(70, 69, 69);
-  box-shadow: 4px 4px 4px 4px rgb(15, 14, 14);
-  border-radius: 25px;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
+.navbar a.active {
+  background-color: #3498db;
+  color: white;
 }
-.card img{
-  width: 100px;
-  height: 100px;
-}
-.card p{
-  padding: 5px;
-  letter-spacing: 5px;
-  font-size: 18px;
-  border: 2px solid black;
-  border-radius: 15px;
-  /* box-shadow: 2px 2px 2px 2px rgb(14, 8, 8); */
-  /* line-height: 0%; */
-}
-.hcon{
-  width: 100%;
-  height: 90vh;
-  background-color: aquamarine;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.hform{
-  justify-content: center;
-  width: 30%;
-  padding: 20px;
-  /* height: 30vh; */
-  border: 2px solid black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 25px;
-  gap: 5px;
-}
-.hform button{
-  padding: 5px;
-  font-size: 18px;
-  font-weight: bold;
-}
-.rcon{
-  width: 100%;
-  height: 90vh;
-  background-color: aquamarine;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-  box-sizing: border-box;
-}
-.rcon h1{
-  text-align: center;
-}
-.rform{
-  padding: 20px;
-  border: 2px solid black;
-  border-radius: 25px;
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* border: 2px solid black; */
-  box-sizing: border-box;
-  gap: 5px;
-}
-.rp1{
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  /* border: 2px solid black; */
-}
-.rp2{
-  /* border: 2px solid black; */
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.rform button{
-  padding: 5px;
-  font-size: 18px;
-  font-weight: bold;
-}
-.hmcon{
-  width: 100%;
-  min-height: 90vh;
-  background-color: aquamarine;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-  box-sizing: border-box;
-  gap: 6px;
-}
-.hmform{
-  justify-content: center;
-  width: 30%;
-  padding: 20px;
-  /* height: 30vh; */
-  border: 2px solid black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 25px;
-}
-.hmform button{
-  padding: 5px;
-  font-size: 18px;
-  font-weight: bold;
-}
-table,tr,th,td{
-  border: 2px solid black;
-  text-align: center;
-  vertical-align: center;
-  border-collapse: collapse;
-}
-.hmcon img{
-  width: 100px;
-  height: 100px;
-}
-.dcon{
-  width: 100%;
-  height: 90vh;
-  background-color: aquamarine;
-}
-.dcon table{
-  width: 100%;
-}
-.dcon th{
-  text-decoration: underline;
-}
-.edcon{
-  width: 100%;
-  height: 90vh;
-  background-color: aquamarine;
-  display: flex;
-  justify-content: center;
-  /* flex-direction: column; */
-  /* align-items: center; */
-  box-sizing: border-box;
-}
-.edform{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* border: 2px solid black; */
-  box-sizing: border-box;
-}
-.ep1{
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  /* border: 2px solid black; */
-}
-.ep2{
-  /* border: 2px solid black; */
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.lgcon{
-  width: 100%;
-  height: 90vh;
-  background-color: aquamarine;
-  display: flex;
-  justify-content: center;
-  /* flex-direction: column; */
-  /* align-items: center; */
-  box-sizing: border-box;
-  position: relative;
-}
-.lgform{
 
-  position: absolute;
-  top: 30%;
-  width: 30%;
+.navbar div {
+  font-weight: bold;
+  color: #27ae60;
+  padding: 0.5rem 1rem;
 }
-.lginp{
-  padding: 30px;
-  border: 2px solid black;
-  border-radius: 25px;
-  left: 0%;
-  top: 30%;
-  position: absolute;
-  width: 100%;
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0.5rem;
+  }
+
+  .navbar a,
+  .navbar div {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* General container styling */
+.hcon {
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.hcon h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+/* Form container */
+.hform {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  /* border: 2px solid black; */
-  box-sizing: border-box;
-  gap: 5px;
+  gap: 1rem;
+   background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-.lginp button{
-  padding: 5px;
-  font-size: 18px;
+
+/* Radio buttons section */
+.hform > div:first-child {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 1rem;
+}
+
+/* Input box */
+.hform input[type='text'] {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Button */
+.hform button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hform button:hover {
+  background-color: #388e3c;
+}
+
+/* Card with hall ticket info */
+.card {
+  margin-top: 1.5rem;
+  background-color: #e8f5e9;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1rem;
+  margin: 0.3rem 0;
+  color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .hform > div:first-child {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hform input[type='text'] {
+    font-size: 0.95rem;
+  }
+
+  .hform button {
+    width: 100%;
+  }
+
+  .card img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
+/* Main container */
+.rcon {
+  max-width: 700px;
+  margin: auto;
+  padding: 1.5rem;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Heading */
+.rcon h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+/* Form container */
+.rform {
+  background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Input group 1 */
+.rp1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+/* Input group 2 */
+.rp2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Text inputs */
+.rform input[type='text'],
+.rform input[type='number'],
+.rform input[type='date'],
+.rform input[type='email'],
+.rform input[type='file'] {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  flex: 1;
+  min-width: 200px;
+  box-sizing: border-box;
+}
+
+/* Gender section */
+.rform > div:nth-child(2) {
+  text-align: left;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Radio buttons label */
+.rform input[type='radio'] {
+  margin-left: 0.5rem;
+  margin-right: 0.3rem;
+}
+
+/* Button */
+.rform button {
+  background-color: #3498db;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rform button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive behavior */
+@media (max-width: 600px) {
+  .rp1 {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .rform input[type='text'],
+  .rform input[type='number'],
+  .rform input[type='date'],
+  .rform input[type='email'] {
+    width: 100%;
+  }
+
+  .rform button {
+    width: 100%;
+  }
+}
+
+/* Main container */
+.hmcon {
+  max-width: 800px;
+  margin: auto;
+  padding: 1.5rem;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Heading */
+.hmcon h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+/* Form container */
+.hmform {
+ background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Input field */
+.hmform input[type='text'] {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Button */
+.hmform button {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hmform button:hover {
+  background-color: #2980b9;
+}
+
+/* Error message */
+.err {
+  color: red;
   font-weight: bold;
 }
+
+/* Results table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 1rem;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Table rows and cells */
+table th,
+table td {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+/* Table header */
+table th {
+  background-color: #f1f1f1;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Student photo in table */
+table img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Responsive behavior */
+@media (max-width: 600px) {
+  .hmform input[type='text'] {
+    max-width: 100%;
+  }
+
+  .hmform button {
+    width: 100%;
+  }
+
+  table th,
+  table td {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.5rem;
+  }
+
+  table img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
+/* Main container */
+.lgcon {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Form box */
+.lgform {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Message text */
+.lgform > div:first-child {
+  color: #e74c3c;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Input group */
+.lginp {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Inputs */
+.lginp input[type='text'],
+.lginp input[type='password'] {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Button */
+.lginp button {
+  padding: 0.7rem;
+  font-size: 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lginp button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive behavior */
+@media (max-width: 500px) {
+  .lgform {
+    padding: 1.5rem;
+  }
+
+  .lginp input,
+  .lginp button {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* Main container */
+.edcon {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem 1rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Form container */
+.edform {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Heading */
+.edform h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Input sections */
+.ep1,
+.ep2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+/* Inputs */
+.ep1 input,
+.ep2 input {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  flex: 1 1 250px;
+  min-width: 200px;
+  box-sizing: border-box;
+}
+
+/* Gender section */
+.edform > div:nth-child(3) {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Radio spacing */
+.edform input[type='radio'] {
+  margin-left: 0.5rem;
+  margin-right: 0.3rem;
+}
+
+/* Button */
+.edform button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  max-width: 300px;
+  align-self: center;
+}
+
+.edform button:hover {
+  background-color: #219150;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .ep1,
+  .ep2 {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ep1 input,
+  .ep2 input {
+    width: 100%;
+  }
+
+  .edform button {
+    width: 100%;
+  }
+}
+
+
+/* Main container */
+.dcon {
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+  overflow-x: auto; /* Enables horizontal scroll on small screens */
+}
+
+/* Table */
+.dcon table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  min-width: 900px;
+}
+
+/* Table header */
+.dcon table th {
+  background-color: #2c3e50;
+  color: white;
+  padding: 0.75rem;
+  text-align: left;
+  font-size: 0.95rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Table rows */
+.dcon table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+/* Buttons */
+.dcon button {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Edit button */
+.dcon button:nth-child(1) {
+  background-color: #3498db;
+  color: white;
+}
+
+.dcon button:nth-child(1):hover {
+  background-color: #2980b9;
+}
+
+/* Delete button */
+.dcon button:nth-child(2) {
+  background-color: #e74c3c;
+  color: white;
+  margin-left: 0.5rem;
+}
+
+.dcon button:nth-child(2):hover {
+  background-color: #c0392b;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .dcon table {
+    font-size: 0.85rem;
+  }
+
+  .dcon table th,
+  .dcon table td {
+    padding: 0.6rem;
+  }
+
+  .dcon button {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
+
+
